@@ -3,139 +3,51 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Talal Widatalla — Research</title>
-  <meta name="description" content="Talal Widatalla — PhD student in Biophysics at Stanford. Machine learning for molecular design and discovery." />
-  <meta property="og:title" content="Talal Widatalla — Research" />
-  <meta property="og:description" content="Machine learning for molecular design and discovery." />
-  <meta property="og:type" content="website" />
-  <link rel="preload" href="styles.css" as="style">
-  <link rel="stylesheet" href="styles.css">
+  <title>Talal Widatalla</title>
+  <meta name="description" content="Talal Widatalla — PhD student in Biophysics at Stanford. Machine learning for molecular design & discovery." />
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-  <style>
-    /* Small inline fallback while CSS loads */
-    body{visibility:visible;}
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Talal Widatalla",
-    "jobTitle":"PhD Student, Biophysics",
-    "email":"mailto:talalw@stanford.edu",
-    "affiliation":{"@type":"CollegeOrUniversity","name":"Stanford University"},
-    "address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},
-    "knowsAbout":[
-      "Machine Learning","Protein Design","Molecular Biophysics","Graph Neural Networks","Language Models","Diffusion Models"
-    ]
-  }
-  </script>
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <div>
-        <h1 class="name">Talal Widatalla</h1>
-        <p class="tagline">Machine learning for molecular design &amp; discovery</p>
-      </div>
-      <nav class="nav">
-        <a href="#work">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a class="button" href="assets/cv/Talal_Widatalla_CV.tex" download>Download CV (.tex)</a>
+    <div class="wrap bar">
+      <nav class="topnav">
+        <a href="publications.html">Research</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+        <a class="button subtle" href="assets/cv/Talal_Widatalla_CV.tex" download>Download CV</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="intro">
+  <main class="wrap hero">
+    <h1 class="name">Talal Widatalla</h1>
+    <div class="icons">
+      <a href="https://scholar.google.com/citations?user=MUckpHkAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://www.linkedin.com/in/talal-widatalla-45574244/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/talaldotpdb" target="_blank" rel="noopener">X</a>
+      <a href="https://github.com/twidatalla/" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:talalw@stanford.edu">Email</a>
+    </div>
+
+    <div class="prose">
       <p>
-        I'm a PhD student in Biophysics at Stanford (advised by Brian Hie), building deep learning methods for protein and antibody design.
-        Previously, I worked at Merck on production ML systems for molecular property prediction and hit identification.
+        I am a PhD student in <b>Biophysics</b> at Stanford University advised by <b>Brian Hie</b>. My research focuses on building
+        machine learning systems—<b>graph neural networks</b>, <b>language models</b>, and <b>diffusion models</b>—for protein and antibody design.
+        Previously, I built production ML for molecular property prediction and hit identification at <b>Merck</b>.
       </p>
-    </section>
-
-    <section id="work" class="section">
-      <h2>Selected Work</h2>
-      <ol class="pubs">
-        <li><strong>Widatalla, T.</strong>*, Shuai, R.*, Huang, P‑S, Hie, B. <em>Sidechain conditioning and modeling for protein sequence design with FAMPNN</em>. ICML, 2025.</li>
-        <li><strong>Widatalla, T.</strong>, Rafailov, R., Hie, B. <em>Aligning Protein Generative Models with Experimental Fitness via Direct Preference Optimization</em>. bioRxiv, 2024. In submission.</li>
-        <li><strong>Widatalla, T.</strong>, Rollins, Z., Cheng, A. <em>AbPROP: Language and Graph Deep Learning for Antibody Property Prediction</em>. ICML Workshop on Computational Biology, 2023.</li>
-        <li>Rollins, Z., <strong>Widatalla, T.</strong>, Cheng, A., Metwally, E. <em>AbMelt: Learning Antibody Thermostability from Molecular Dynamics</em>. Biophysical Journal, 2023.</li>
-        <li>Rollins, Z., <strong>Widatalla, T.</strong>, Waight, A., Cheng, A., Metwally, E. <em>AbLEF: Antibody Language Ensemble Fusion for Thermodynamically Empowered Property Predictions</em>. Bioinformatics, 2023.</li>
-        <li>Waight, A., et al. (inc. <strong>Widatalla, T.</strong>) <em>A machine learning strategy for the identification of key in silico descriptors and prediction models for IgG monoclonal antibody developability properties</em>. mAbs, 2023.</li>
-      </ol>
-      <p class="note">Have links? Drop them in <code>index.html</code> later and they'll render as anchors automatically.</p>
-    </section>
-
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <div class="cards">
-        <article class="card">
-          <header><h3>Graduate Student, Brian Hie Lab</h3><div class="meta">Jan 2024 — Present · Stanford University &amp; Arc Institute</div></header>
-          <ul>
-            <li>Full‑atom protein sequence design with GNNs + multimodal objectives; SOTA across design benchmarks.</li>
-            <li>Aligning structure‑conditioned protein generative models with experimental fitness via offline RL.</li>
-            <li>Leading wet‑lab validation for stability‑enhanced viral immunogen design.</li>
-            <li>Managing an undergraduate on biophysics‑aware protein language models.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <header><h3>Rotation Student, Po‑Ssu Huang Lab</h3><div class="meta">Sept 2023 — Jan 2024 · Stanford</div></header>
-          <ul>
-            <li>Processed TB‑scale MD trajectories to train a full‑atom protein diffusion model.</li>
-            <li>Implemented conditional and unconditional protein generation methods.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <header><h3>Data Scientist — AI/ML</h3><div class="meta">Aug 2022 — Sept 2023 · Merck Research Laboratories</div></header>
-          <ul>
-            <li>Production ML system (GNN + LM) for antibody property prediction (ICML Workshop publication).</li>
-            <li>Deployed pipeline for antibody thermostability prediction (Biophysical Journal).</li>
-            <li>High‑throughput virtual screening with active learning and structural deep learning.</li>
-            <li>Part‑time concurrent with PhD: 3D multiconformer GNN for small‑molecule property prediction.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <header><h3>Scientific Software Development Intern</h3><div class="meta">May 2022 — Aug 2022 · OpenEye Scientific</div></header>
-          <ul>
-            <li>Built tools to mine structural properties from PDB protein structures.</li>
-            <li>Analyzed protein‑interaction patterns to guide structure‑based ligand design.</li>
-            <li>Benchmarked protein modeling software via computational geometry.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <header><h3>Undergraduate Researcher</h3><div class="meta">Sept 2021 — May 2022 · Johns Hopkins (Jeffrey Gray Lab)</div></header>
-          <ul>
-            <li>Zero‑/few‑shot fitness prediction with an antibody language model trained on OAS.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>Technical Skills</h2>
-      <ul class="skills">
-        <li><strong>ML</strong>: Graph Neural Networks, Language Models, Diffusion Models, Reinforcement Learning</li>
-        <li><strong>Molecular Modeling</strong>: PyMol, Rosetta, Gaussian, MOE, MDAnalysis, GROMACS, Docking</li>
-        <li><strong>Programming</strong>: Python, PyTorch, Linux, High‑Performance Computing, R, Matlab</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <ul class="contact">
-        <li><a href="mailto:talalw@stanford.edu">talalw@stanford.edu</a></li>
-        <li>San Francisco, CA</li>
-      </ul>
-      <p class="note">Prefer not to list your phone publicly? Remove it in <code>index.html</code>.</p>
-    </section>
+      <p>
+        I work in the Hie Lab and collaborate with the Arc Institute. I'm especially interested in structure-conditioned generative models and
+        aligning model objectives with <b>experimental fitness</b>. Here is my <a href="assets/cv/Talal_Widatalla_CV.tex" download>complete CV</a>.
+      </p>
+      <p>
+        I’m always open for a <b>coffee chat</b> about research, machine learning, and computational biology—feel free to reach out.
+      </p>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <span>© 2025 Talal Widatalla</span>
-    </div>
+    <div class="wrap">© 2025 Talal Widatalla</div>
   </footer>
 </body>
 </html>

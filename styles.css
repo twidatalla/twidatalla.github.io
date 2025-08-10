@@ -1,68 +1,63 @@
-/* Minimal research site styles */
+/* Talal Widatalla — minimal research site */
 * { box-sizing: border-box; }
 :root {
   --bg: #ffffff;
-  --fg: #0b1220;
-  --muted: #485063;
-  --link: #1a5fff;
-  --card: #f6f7fb;
-  --border: #e6e8ef;
+  --text: #0e1220;
+  --muted: #4f5668;
+  --line: #e8eaf1;
+  --link: #2b5cff;
+  --accent: #2b5cff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0b0f16;
-    --fg: #e6eaf2;
-    --muted: #9aa3b2;
-    --link: #7aa2ff;
-    --card: #121826;
-    --border: #2a3142;
+    --text: #e7ebf4;
+    --muted: #9ea6b7;
+    --line: #2a3142;
+    --link: #93adff;
+    --accent: #93adff;
   }
 }
-html, body {
-  padding: 0; margin: 0;
-  background: var(--bg); color: var(--fg);
-  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-rendering: optimizeLegibility;
-}
-.container {
-  max-width: 840px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-.site-header {
-  border-bottom: 1px solid var(--border);
-  position: sticky; top: 0; background: var(--bg); z-index: 10;
-}
-.header-inner {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 18px 0;
-}
-.name { margin: 0; font-size: 1.5rem; }
-.tagline { margin: 2px 0 0; color: var(--muted); font-size: .95rem; }
-.nav a { margin-left: 16px; text-decoration: none; color: var(--fg); }
-.nav a:hover { color: var(--link); }
-.nav .button {
-  padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px;
-}
-.intro { padding: 28px 0 8px; }
-.section { padding: 22px 0; }
-.section h2 { font-size: 1.25rem; margin: 0 0 12px; }
-.pubs { padding-left: 20px; margin: 0; }
-.pubs li { margin: 8px 0; }
-.cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
-.card {
-  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-  padding: 14px;
-}
-.card header { margin-bottom: 8px; }
-.card h3 { margin: 0 0 4px; font-size: 1.05rem; }
-.card .meta { color: var(--muted); font-size: .9rem; }
-.skills { list-style: none; padding: 0; margin: 0; }
-.skills li { margin: 6px 0; }
-.contact { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font:17px/1.7 ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, Roboto, "Helvetica Neue", Arial; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 22px; }
+
+/* Header (simple top nav) */
+.site-header { position: sticky; top:0; z-index:10; background:var(--bg); border-bottom:1px solid var(--line); }
+.site-header .bar { display:flex; align-items:center; justify-content:flex-end; gap:22px; padding:14px 0; }
+.topnav a { text-decoration:none; color:var(--text); }
+.topnav a:hover { color: var(--link); }
+
+/* Landing hero */
+.hero { padding: 30px 0 24px; display:block; }
+.name { font-size: 3rem; line-height: 1.05; margin: 0 0 10px; letter-spacing: -0.02em; color: var(--link); font-weight: 800; }
+.icons { display:flex; gap:14px; margin: 2px 0 14px; }
+.icons a { color: var(--text); text-decoration: none; border:1px solid var(--line); border-radius: 10px; padding: 6px 10px; font-size: 0.95rem; }
+.icons a:hover { border-color: var(--accent); color: var(--accent); }
+.hero .prose { max-width: 700px; }
+.hero p { margin: 14px 0; }
+.hero b { font-weight: 700; }
 a { color: var(--link); }
-.note { color: var(--muted); font-size: .9rem; }
-.site-footer { border-top: 1px solid var(--border); padding: 18px 0; margin-top: 30px; color: var(--muted); }
-@media (min-width: 860px) {
-  .cards { grid-template-columns: 1fr 1fr; }
+
+/* Footer */
+.site-footer { border-top:1px solid var(--line); margin-top:34px; }
+.site-footer .wrap { padding: 16px 0; color: var(--muted); }
+
+/* Subpages */
+.page .title { font-size: 2rem; margin: 8px 0 14px; }
+.nav-row { display:flex; align-items:center; gap:16px; }
+.nav-row a { text-decoration:none; color:var(--text); }
+.nav-row a:hover { color:var(--link); }
+.button { display:inline-block; padding:8px 12px; border:1px solid var(--line); border-radius:10px; text-decoration:none; }
+.button:hover { border-color:var(--accent); color:var(--accent); }
+.button.subtle { background:transparent; }
+
+.pubs { padding-left: 22px; margin: 0; }
+.pubs li { margin: 10px 0; }
+.cards { display:grid; grid-template-columns: 1fr; gap: 14px; }
+.card { border: 1px solid var(--line); border-radius: 14px; padding: 14px; background: rgba(0,0,0,0.02); }
+.card .meta { color: var(--muted); font-size: .95rem; }
+
+/* Responsive */
+@media (max-width: 520px) {
+  .name { font-size: 2.3rem; }
 }
