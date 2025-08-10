@@ -1,0 +1,109 @@
+\
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+\definecolor{primary}{RGB}{0, 70, 155}
+
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{\uppercase}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+
+\newcommand{\datewidth}{1.5in}
+\newcommand{\position}[4]{%
+    \noindent\begin{tabular}{@{}p{\dimexpr\textwidth-\datewidth}p{\datewidth}@{}}
+    \textbf{#1} & #2\\
+    #3 &\\
+    \end{tabular}
+    #4
+    \vspace{1.2em}
+}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Talal Widatalla}\\[0.3em]
+{\small talalw@stanford.edu $\bullet$ 323-630-8898 $\bullet$ San Francisco, CA}
+\end{center}
+\vspace{0.5em}
+
+\section{Summary}
+Machine learning researcher for molecular design and discovery, with an interdisciplinary background in molecular biophysics as well as statistics and machine learning. Expertise in developing novel deep learning architectures for biological applications during PhD advised by Brian Hie, as well as experience in building production ML systems in industry for molecular property prediction and hit-identification with Merck.
+
+\section{Education}
+\noindent\begin{tabular}{@{}p{\dimexpr\textwidth-1.25in}p{1.25in}@{}}
+\textbf{Stanford University} & Expected 2027\\
+PhD Student in Biophysics & \\
+Dual NSF GRFP and Stanford Graduate (SGF) Fellow & \\[0.5em]
+\textbf{Johns Hopkins University} & May 2022\\
+Bachelor of Arts in Biophysics & \\
+Bachelor of Science in Applied Math and Statistics & \\
+\end{tabular}
+
+\section{Selected Work}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item \textbf{Widatalla, T.}*, Shuai, R.*, Huang, P-S, Hie, B. ``Sidechain conditioning and modeling for protein sequence design with FAMPNN'' (2025). \textit{ICML}.
+    \item \textbf{Widatalla, T.}, Rafailov, R., Hie, B. ``Aligning Protein Generative Models with Experimental Fitness via Direct Preference Optimization'' (2024). \textit{bioRxiv}. \textit{In submission}.
+    \item \textbf{Widatalla, T.}, Rollins, Z., Cheng, A. ``AbPROP: Language and Graph Deep Learning for Antibody Property Prediction'' (2023). \textit{ICML Workshop on Computational Biology}.
+    \item Rollins, Z., \textbf{Widatalla, T.}, Cheng, A., Metwally, E. ``AbMelt: Learning Antibody Thermostability from Molecular Dynamics'' (2023). \textit{Biophysical Journal}.
+    \item Rollins, Z., \textbf{Widatalla, T.}, Waight, A., Cheng, A., Metwally, E. ``AbLEF: Antibody Language Ensemble Fusion for Thermodynamically empowered property predictions'' (2023). \textit{Bioinformatics}.
+    \item Waight, A., et al. (inc. \textbf{Widatalla, T.}) ``A machine learning strategy for the identification of key in silico descriptors and prediction models for IgG monoclonal antibody developability properties'' (2023). \textit{mAbs}.
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item \textbf{Machine Learning:} Graph Neural Networks, Language Models, Diffusion Models, Reinforcement Learning
+    \item \textbf{Molecular Modeling:} PyMol, Rosetta, Gaussian, MOE, MDAnalysis, GROMACS, Docking
+    \item \textbf{Programming:} Python, PyTorch, Linux, High Performance Computing, R, Matlab
+\end{itemize}
+
+\section{Experience}
+\position{Graduate Student, Brian Hie Lab}{Jan 2024 -- Present}{Stanford University and the Arc Institute}{
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item Implemented novel graph-neural network architecture and multi-modal training objective for full-atom protein sequence design method leading to SOTA performance across protein design benchmarks
+    \item Developed approach for aligning structure-conditioned protein generative models with experimental fitness with offline reinforcement learning policy
+    \item Leading end-to-end validation through wet-lab experiments for stability-enhanced viral immunogen design
+    \item Managing undergraduate researcher on biophysics-aware protein language model development
+\end{itemize}}
+
+\position{Rotation Student, Po-Ssu Huang Lab}{Sept 2023 -- Jan 2024}{Stanford University, Biophysics Program}{
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item Processed terabyte-scale molecular dynamics trajectories to train full-atom protein diffusion model
+    \item Implemented and evaluated conditional and unconditional protein generation methods
+\end{itemize}}
+
+\position{Data Scientist -- AI/ML}{Aug 2022 -- Sept 2023}{Merck Research Laboratories}{
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item Led development of production-ready ML system combining GNNs and language models for antibody property prediction, resulting in publication at ICML Workshop
+    \item Designed and deployed end-to-end ML pipeline for antibody thermostability prediction using MD simulation features, work published in Biophysical Journal
+    \item Architected high-throughput virtual screening system using active learning and structural deep learning, enabling rapid molecule screening at scale
+    \item Continuing as part-time concurrent with PhD, implementing a 3D multiple conformation graph neural network for small molecule property prediction
+\end{itemize}}
+
+\position{Scientific Software Development Intern}{May 2022 -- Aug 2022}{OpenEye Scientific Software}{
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item Developed software for mining structural properties from PDB protein structures
+    \item Analyzed protein-interaction patterns to guide structure-based ligand design
+    \item Evaluated protein modeling software through computational geometry analysis
+\end{itemize}}
+
+\position{Undergraduate Researcher}{Sept 2021 -- May 2022}{Johns Hopkins University, Dr. Jeffrey Gray Lab}{
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item Evaluated zero-shot and few-shot fitness prediction capabilities of antibody language model trained on OAS database
+\end{itemize}}
+
+\section{Selected Coursework}
+Generative Models $\bullet$ Computational Protein Design $\bullet$ Computational Chemistry $\bullet$ Probability \& Statistics $\bullet$ Data Structures $\bullet$ Data Science $\bullet$ Applied Statistics $\bullet$ Optimization $\bullet$ Methods in Molecular Biophysics $\bullet$ Computational Biology 
+\end{document}
