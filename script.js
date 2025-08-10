@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Auto-link detection for publication items
   document.querySelectorAll('.pubs li').forEach(li => {
     const match = li.textContent.match(/https?:\/\/\S+/);
     if (match && !li.querySelector('a[data-autolink]')) {
