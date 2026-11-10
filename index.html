@@ -44,17 +44,17 @@
   ]
 }
 </script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232d4a60'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='30'%20font-weight='700'%20fill='%23d3a76a'%20text-anchor='middle'%3ETW%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232d4a60'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='30'%20font-weight='700'%20fill='%239cc3f0'%20text-anchor='middle'%3ETW%3C/text%3E%3C/svg%3E">
 <style>
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; }
-  ::selection { background: #a06a34; color: #fff; }
+  ::selection { background: #1f5fae; color: #fff; }
   @keyframes riseIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 </head>
 <body>
-<div data-screen-label="Personal site" style="--accent: #a06a34; --ink: #2d4a60; --muted: #6c7a86; --paper: #edeef1; --surface: #f7f8fa; --hair: #d7dbe1; background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; font-size: 15.8px; line-height: 1.55; -webkit-font-smoothing: antialiased; min-height: 100vh;">
+<div data-screen-label="Personal site" style="--accent: #1f5fae; --ink: #2d4a60; --muted: #6c7a86; --paper: #ffffff; --surface: #f7f8fa; --hair: #d7dbe1; background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; font-size: 15.8px; line-height: 1.55; -webkit-font-smoothing: antialiased; min-height: 100vh;">
 
   <!-- NAV -->
   <nav style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px clamp(20px, 5vw, 64px); background: color-mix(in srgb, var(--paper) 86%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--hair); font-family: Arial, sans-serif;">
@@ -68,7 +68,7 @@
   </nav>
 
   <!-- HERO -->
-  <header id="top" style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 8vw, 110px) clamp(20px, 5vw, 64px) clamp(40px, 6vw, 80px); display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: clamp(28px, 3.5vw, 52px); align-items: stretch; position: relative; overflow: hidden;">
+  <header id="top" style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 8vw, 110px) clamp(20px, 5vw, 64px) clamp(40px, 6vw, 80px); display: grid; grid-template-columns: minmax(0, 1fr) clamp(140px, 22vw, 240px); gap: clamp(28px, 3.5vw, 52px); align-items: start; position: relative; overflow: hidden;">
     <svg aria-hidden="true" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; color: var(--ink);">
       <!-- top band: zig-zag scatter (y < 70) -->
       <g transform="translate(235,24) rotate(-6) scale(0.62)" fill="none" stroke="currentColor" stroke-width="2.2" stroke-opacity="0.15" stroke-linecap="round" stroke-linejoin="round">
@@ -184,8 +184,8 @@
         <a href="mailto:talal.widatalla@gmail.com" style="color: var(--ink); text-decoration: none; border: 1px solid var(--hair); padding: 8px 14px; border-radius: 999px; background: var(--surface);" style-hover="border-color: var(--accent); color: var(--accent);">Email</a>
       </div>
     </div>
-    <div style="height: 100%; position: relative; z-index: 1;">
-      <img src="headshot.jpg" alt="Talal Widatalla" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover; object-position: 50% 22%; display: block; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent); border-radius: 6px; box-shadow: 0 10px 30px -16px color-mix(in srgb, var(--ink) 55%, transparent);">
+    <div style="position: relative; z-index: 1;">
+      <img src="headshot.jpg" alt="Talal Widatalla" style="width: 100%; aspect-ratio: 4 / 5; height: auto; object-fit: cover; object-position: 50% 22%; display: block; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent); border-radius: 6px; box-shadow: 0 10px 30px -16px color-mix(in srgb, var(--ink) 55%, transparent);">
     </div>
   </header>
 
@@ -196,132 +196,64 @@
 
   <!-- RESEARCH -->
   <section id="research" style="max-width: 1180px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 64px); border-top: 1px solid var(--hair);">
-    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 44px; flex-wrap: wrap;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;">
       <div>
         <h2 style="font-family: Arial, sans-serif; font-size: clamp(1.76rem, 3.7vw, 2.73rem); line-height: 1.02; letter-spacing: -0.02em; font-weight: 400; margin: 0;">Selected work</h2>
       </div>
       <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); white-space: nowrap;">* Denotes equal contribution</div>
     </div>
 
-    <div style="display: flex; flex-direction: column;">
-
-      <div style="font-family: Arial, sans-serif; font-size: clamp(1.1rem, 1.76vw, 1.5rem); letter-spacing: -0.01em; font-weight: 600; color: var(--ink); margin: 8px 0 20px;">First &amp; co-first author</div>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 1px solid var(--hair); border-radius: 8px; transition: background 0.18s ease;" style-hover="background: color-mix(in srgb, var(--accent) 6%, transparent);">
-        <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); padding-top: 6px;"><div style="color: var(--ink); font-weight: 500;">2026</div><div style="margin-top: 6px; color: var(--accent);">Nature Methods</div></div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(0.97rem, 1.67vw, 1.28rem); line-height: 1.22; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 10px;"><a href="https://www.nature.com/articles/s41592-026-03137-3" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">Aligning protein-generative models to experimental fitness with ProteinDPO</a></h3>
-          <p style="font-family: Arial, sans-serif; font-size: 12.3px; line-height: 1.65; color: var(--muted); margin: 0;"><strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Borah, A.A., King, S.H., Driscoll, C.L., Rafailov, R., Hie, B.L.  ·  <a href="https://www.nature.com/articles/s41592-026-03137-3" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a>  ·  <a href="https://github.com/evo-design/protein-dpo" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 1px solid var(--hair); border-radius: 8px; transition: background 0.18s ease;" style-hover="background: color-mix(in srgb, var(--accent) 6%, transparent);">
-        <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); padding-top: 6px;"><div style="color: var(--ink); font-weight: 500;">2026</div><div style="margin-top: 6px; color: var(--accent);">Nature Biotech.</div></div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(0.97rem, 1.67vw, 1.28rem); line-height: 1.22; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 10px;"><a href="https://www.nature.com/articles/s41587-026-03187-0" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">Efficient generation of epitope-targeted de novo antibodies with Germinal</a></h3>
-          <p style="font-family: Arial, sans-serif; font-size: 12.3px; line-height: 1.65; color: var(--muted); margin: 0;">Mille-Fragoso, L.*, Driscoll, C.*, Wang, J.*, Dai, H.*, <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.*</strong>, Zhang, J.*, Zhang, X., Rao, B., Feng, L., Hie, B., Gao, X.  ·  <a href="https://www.nature.com/articles/s41587-026-03187-0" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a>  ·  <a href="https://github.com/SantiagoMille/germinal" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 1px solid var(--hair); border-radius: 8px; transition: background 0.18s ease;" style-hover="background: color-mix(in srgb, var(--accent) 6%, transparent);">
-        <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); padding-top: 6px;"><div style="color: var(--ink); font-weight: 500;">2025</div><div style="margin-top: 6px; color: var(--accent);">ICML</div></div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(0.97rem, 1.67vw, 1.28rem); line-height: 1.22; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 10px;"><a href="https://openreview.net/forum?id=EE8Z8Se5Te" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">Sidechain conditioning and modeling for protein sequence design with FAMPNN</a></h3>
-          <p style="font-family: Arial, sans-serif; font-size: 12.3px; line-height: 1.65; color: var(--muted); margin: 0;"><strong style="color: var(--accent); font-weight: 600;">Widatalla, T.*</strong>, Shuai, R.*, Huang, P-S, Hie, B.  ·  <a href="https://openreview.net/forum?id=EE8Z8Se5Te" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a>  ·  <a href="https://github.com/richardshuai/fampnn" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 1px solid var(--hair); border-radius: 8px; transition: background 0.18s ease;" style-hover="background: color-mix(in srgb, var(--accent) 6%, transparent);">
-        <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); padding-top: 6px;"><div style="color: var(--ink); font-weight: 500;">2023</div><div style="margin-top: 6px; color: var(--accent);">ICML Workshop</div><div style="margin-top: 2px; color: var(--accent);">Comp. Biology</div></div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(0.97rem, 1.67vw, 1.28rem); line-height: 1.22; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 10px;"><a href="https://icml-compbio.github.io/2023/papers/WCBICML2023_paper53.pdf" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">AbPROP: Language and Graph Deep Learning for Antibody Property Prediction</a></h3>
-          <p style="font-family: Arial, sans-serif; font-size: 12.3px; line-height: 1.65; color: var(--muted); margin: 0;"><strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Rollins, Z., Cheng, A.  ·  <a href="https://icml-compbio.github.io/2023/papers/WCBICML2023_paper53.pdf" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a>  ·  <a href="https://github.com/Merck/AbPROP" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></p>
-        </div>
-      </article>
-
-      <div style="font-family: Arial, sans-serif; font-size: clamp(1.1rem, 1.76vw, 1.5rem); letter-spacing: -0.01em; font-weight: 600; color: var(--ink); margin: 44px 0 20px;">Co-author</div>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 1px solid var(--hair); border-radius: 8px; transition: background 0.18s ease;" style-hover="background: color-mix(in srgb, var(--accent) 6%, transparent);">
-        <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); padding-top: 6px;"><div style="color: var(--ink); font-weight: 500;">2024</div><div style="margin-top: 6px; color: var(--accent);">Biophysical Journal</div></div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(0.97rem, 1.67vw, 1.28rem); line-height: 1.22; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 10px;"><a href="https://www.cell.com/biophysj/fulltext/S0006-3495(24)00385-0" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">AbMelt: Learning Antibody Thermostability from Molecular Dynamics</a></h3>
-          <p style="font-family: Arial, sans-serif; font-size: 12.3px; line-height: 1.65; color: var(--muted); margin: 0;">Rollins, Z., <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Cheng, A., Metwally, E.  ·  <a href="https://www.cell.com/biophysj/fulltext/S0006-3495(24)00385-0" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a>  ·  <a href="https://github.com/MSDLLCpapers/AbMelt" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 1px solid var(--hair); border-radius: 8px; transition: background 0.18s ease;" style-hover="background: color-mix(in srgb, var(--accent) 6%, transparent);">
-        <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); padding-top: 6px;"><div style="color: var(--ink); font-weight: 500;">2024</div><div style="margin-top: 6px; color: var(--accent);">Bioinformatics</div></div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(0.97rem, 1.67vw, 1.28rem); line-height: 1.22; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 10px;"><a href="https://academic.oup.com/bioinformatics/article/40/5/btae268/7646845" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">AbLEF: Antibody Language Ensemble Fusion for thermodynamically empowered property predictions</a></h3>
-          <p style="font-family: Arial, sans-serif; font-size: 12.3px; line-height: 1.65; color: var(--muted); margin: 0;">Rollins, Z., <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Waight, A., Cheng, A., Metwally, E.  ·  <a href="https://academic.oup.com/bioinformatics/article/40/5/btae268/7646845" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a></p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); border-radius: 8px; transition: background 0.18s ease;" style-hover="background: color-mix(in srgb, var(--accent) 6%, transparent);">
-        <div style="font-family: Arial, sans-serif; font-size: 12.3px; color: var(--muted); padding-top: 6px;"><div style="color: var(--ink); font-weight: 500;">2023</div><div style="margin-top: 6px; color: var(--accent);">mAbs</div></div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(0.97rem, 1.67vw, 1.28rem); line-height: 1.22; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 10px;"><a href="https://www.tandfonline.com/doi/full/10.1080/19420862.2023.2248671" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">A machine learning strategy for the identification of key in silico descriptors and prediction models for IgG monoclonal antibody developability properties</a></h3>
-          <p style="font-family: Arial, sans-serif; font-size: 12.3px; line-height: 1.65; color: var(--muted); margin: 0;">Waight, A., et al. (incl. <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>)  ·  <a href="https://www.tandfonline.com/doi/full/10.1080/19420862.2023.2248671" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a></p>
-        </div>
-      </article>
-
+    <div>
+      <div style="font-family: Arial, sans-serif; font-size: clamp(1rem, 1.5vw, 1.2rem); font-weight: 600; color: var(--ink); margin: 0 0 12px;">First &amp; co-first author</div>
+      <ul style="list-style: disc; margin: 0 0 8px; padding-left: 1.2em; display: flex; flex-direction: column; gap: 14px;">
+        <li style="padding-left: 2px;">
+          <div style="font-size: 0.95rem; line-height: 1.35; font-weight: 500;"><a href="https://www.nature.com/articles/s41592-026-03137-3" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">Aligning protein-generative models to experimental fitness with ProteinDPO</a></div>
+          <div style="font-size: 12.3px; line-height: 1.55; color: var(--muted); margin-top: 3px;"><strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Borah, A.A., King, S.H., Driscoll, C.L., Rafailov, R., Hie, B.L. · <span style="color: var(--accent);">Nature Methods 2026</span> · <a href="https://www.nature.com/articles/s41592-026-03137-3" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a> · <a href="https://github.com/evo-design/protein-dpo" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></div>
+        </li>
+        <li style="padding-left: 2px;">
+          <div style="font-size: 0.95rem; line-height: 1.35; font-weight: 500;"><a href="https://www.nature.com/articles/s41587-026-03187-0" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">Efficient generation of epitope-targeted de novo antibodies with Germinal</a></div>
+          <div style="font-size: 12.3px; line-height: 1.55; color: var(--muted); margin-top: 3px;">Mille-Fragoso, L.*, Driscoll, C.*, Wang, J.*, Dai, H.*, <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.*</strong>, Zhang, J.*, Zhang, X., Rao, B., Feng, L., Hie, B., Gao, X. · <span style="color: var(--accent);">Nature Biotech. 2026</span> · <a href="https://www.nature.com/articles/s41587-026-03187-0" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a> · <a href="https://github.com/SantiagoMille/germinal" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></div>
+        </li>
+        <li style="padding-left: 2px;">
+          <div style="font-size: 0.95rem; line-height: 1.35; font-weight: 500;"><a href="https://openreview.net/forum?id=EE8Z8Se5Te" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">Sidechain conditioning and modeling for protein sequence design with FAMPNN</a></div>
+          <div style="font-size: 12.3px; line-height: 1.55; color: var(--muted); margin-top: 3px;"><strong style="color: var(--accent); font-weight: 600;">Widatalla, T.*</strong>, Shuai, R.*, Huang, P-S, Hie, B. · <span style="color: var(--accent);">ICML 2025</span> · <a href="https://openreview.net/forum?id=EE8Z8Se5Te" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a> · <a href="https://github.com/richardshuai/fampnn" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></div>
+        </li>
+        <li style="padding-left: 2px;">
+          <div style="font-size: 0.95rem; line-height: 1.35; font-weight: 500;"><a href="https://icml-compbio.github.io/2023/papers/WCBICML2023_paper53.pdf" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">AbPROP: Language and Graph Deep Learning for Antibody Property Prediction</a></div>
+          <div style="font-size: 12.3px; line-height: 1.55; color: var(--muted); margin-top: 3px;"><strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Rollins, Z., Cheng, A. · <span style="color: var(--accent);">ICML Workshop Comp. Biology 2023</span> · <a href="https://icml-compbio.github.io/2023/papers/WCBICML2023_paper53.pdf" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a> · <a href="https://github.com/Merck/AbPROP" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></div>
+        </li>
+      </ul>
+      <div style="font-family: Arial, sans-serif; font-size: clamp(1rem, 1.5vw, 1.2rem); font-weight: 600; color: var(--ink); margin: 28px 0 12px;">Co-author</div>
+      <ul style="list-style: disc; margin: 0 0 8px; padding-left: 1.2em; display: flex; flex-direction: column; gap: 14px;">
+        <li style="padding-left: 2px;">
+          <div style="font-size: 0.95rem; line-height: 1.35; font-weight: 500;"><a href="https://www.cell.com/biophysj/fulltext/S0006-3495(24)00385-0" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">AbMelt: Learning Antibody Thermostability from Molecular Dynamics</a></div>
+          <div style="font-size: 12.3px; line-height: 1.55; color: var(--muted); margin-top: 3px;">Rollins, Z., <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Cheng, A., Metwally, E. · <span style="color: var(--accent);">Biophysical Journal 2024</span> · <a href="https://www.cell.com/biophysj/fulltext/S0006-3495(24)00385-0" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a> · <a href="https://github.com/MSDLLCpapers/AbMelt" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Code ↗</a></div>
+        </li>
+        <li style="padding-left: 2px;">
+          <div style="font-size: 0.95rem; line-height: 1.35; font-weight: 500;"><a href="https://academic.oup.com/bioinformatics/article/40/5/btae268/7646845" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">AbLEF: Antibody Language Ensemble Fusion for thermodynamically empowered property predictions</a></div>
+          <div style="font-size: 12.3px; line-height: 1.55; color: var(--muted); margin-top: 3px;">Rollins, Z., <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>, Waight, A., Cheng, A., Metwally, E. · <span style="color: var(--accent);">Bioinformatics 2024</span> · <a href="https://academic.oup.com/bioinformatics/article/40/5/btae268/7646845" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a></div>
+        </li>
+        <li style="padding-left: 2px;">
+          <div style="font-size: 0.95rem; line-height: 1.35; font-weight: 500;"><a href="https://www.tandfonline.com/doi/full/10.1080/19420862.2023.2248671" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;" style-hover="color: var(--accent);">A machine learning strategy for the identification of key in silico descriptors and prediction models for IgG monoclonal antibody developability properties</a></div>
+          <div style="font-size: 12.3px; line-height: 1.55; color: var(--muted); margin-top: 3px;">Waight, A., et al. (incl. <strong style="color: var(--accent); font-weight: 600;">Widatalla, T.</strong>) · <span style="color: var(--accent);">mAbs 2023</span> · <a href="https://www.tandfonline.com/doi/full/10.1080/19420862.2023.2248671" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; white-space: nowrap;" style-hover="text-decoration: underline;">Paper ↗</a></div>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience" style="max-width: 1180px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 64px); border-top: 1px solid var(--hair);">
-    <div style="margin-bottom: 44px;">
+    <div style="margin-bottom: 24px;">
       <h2 style="font-family: Arial, sans-serif; font-size: clamp(1.76rem, 3.7vw, 2.73rem); line-height: 1.02; letter-spacing: -0.02em; font-weight: 400; margin: 0;">Experience</h2>
     </div>
 
-    <div style="display: flex; flex-direction: column;">
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: clamp(16px, 3vw, 44px); padding: 30px 0; border-top: 1px solid var(--hair);">
-        <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--muted); padding-top: 9px; letter-spacing: -0.01em; line-height: 1.15;">SEP 2026 – PRESENT</div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(1.1rem, 1.94vw, 1.5rem); line-height: 1.2; font-weight: 500; margin: 0 0 4px;">Machine Learning Scientist Co-op</h3>
-          <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--accent); margin-bottom: 14px;">Lila Sciences</div>
-          <p style="margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5;">Working on LLM post-training.</p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: clamp(16px, 3vw, 44px); padding: 30px 0; border-top: 1px solid var(--hair);">
-        <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--muted); padding-top: 9px; letter-spacing: -0.01em; line-height: 1.15;">JAN 2024 – PRESENT</div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(1.1rem, 1.94vw, 1.5rem); line-height: 1.2; font-weight: 500; margin: 0 0 4px;">Graduate Researcher, Brian Hie Lab</h3>
-          <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--accent); margin-bottom: 14px;">Stanford University &amp; the Arc Institute</div>
-          <p style="margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5;">Building generative models for protein and antibody design, including ProteinDPO, FAMPNN and Germinal.</p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: clamp(16px, 3vw, 44px); padding: 30px 0; border-top: 1px solid var(--hair);">
-        <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--muted); padding-top: 9px; letter-spacing: -0.01em; line-height: 1.15;">JUN – SEP 2025</div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(1.1rem, 1.94vw, 1.5rem); line-height: 1.2; font-weight: 500; margin: 0 0 4px;">Machine Learning Intern</h3>
-          <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--accent); margin-bottom: 14px;">Generate Biomedicines</div>
-          <p style="margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5;">Trained diffusion-based protein generative models for enzyme and binder design.</p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: clamp(16px, 3vw, 44px); padding: 30px 0; border-top: 1px solid var(--hair);">
-        <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--muted); padding-top: 9px; letter-spacing: -0.01em; line-height: 1.15;">AUG 2022 – JUN 2025</div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(1.1rem, 1.94vw, 1.5rem); line-height: 1.2; font-weight: 500; margin: 0 0 4px;">AI/ML Data Scientist</h3>
-          <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--accent); margin-bottom: 14px;">Merck Research Laboratories</div>
-          <p style="margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5;">Built production ML systems for antibody property prediction and small-molecule virtual screening.</p>
-        </div>
-      </article>
-
-      <article data-reveal="" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: clamp(16px, 3vw, 44px); padding: 30px 0; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair);">
-        <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--muted); padding-top: 9px; letter-spacing: -0.01em; line-height: 1.15;">MAY – AUG 2022</div>
-        <div>
-          <h3 style="font-family: Arial, sans-serif; font-size: clamp(1.1rem, 1.94vw, 1.5rem); line-height: 1.2; font-weight: 500; margin: 0 0 4px;">Scientific Software Development Intern</h3>
-          <div style="font-family: Arial, sans-serif; font-size: 13.2px; color: var(--accent); margin-bottom: 14px;">OpenEye Scientific Software</div>
-          <p style="margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5;">Built software that mines PDB structures to guide structure-based ligand design.</p>
-        </div>
-      </article>
-
-    </div>
+    <ul style="list-style: disc; margin: 0 0 8px; padding-left: 1.2em; display: flex; flex-direction: column; gap: 14px;">
+      <li style="font-size: 0.95rem; line-height: 1.45;"><strong style="font-weight: 600;">Machine Learning Scientist Co-op</strong>, <span style="color: var(--accent);">Lila Sciences</span> <span style="color: var(--muted); font-size: 12.3px; white-space: nowrap;">(SEP 2026 – PRESENT)</span><div style="color: var(--muted); font-size: 0.9rem; margin-top: 2px;">Working on LLM post-training.</div></li>
+      <li style="font-size: 0.95rem; line-height: 1.45;"><strong style="font-weight: 600;">Graduate Researcher, Brian Hie Lab</strong>, <span style="color: var(--accent);">Stanford University &amp; the Arc Institute</span> <span style="color: var(--muted); font-size: 12.3px; white-space: nowrap;">(JAN 2024 – PRESENT)</span><div style="color: var(--muted); font-size: 0.9rem; margin-top: 2px;">Building generative models for protein and antibody design, including ProteinDPO, FAMPNN and Germinal.</div></li>
+      <li style="font-size: 0.95rem; line-height: 1.45;"><strong style="font-weight: 600;">Machine Learning Intern</strong>, <span style="color: var(--accent);">Generate Biomedicines</span> <span style="color: var(--muted); font-size: 12.3px; white-space: nowrap;">(JUN – SEP 2025)</span><div style="color: var(--muted); font-size: 0.9rem; margin-top: 2px;">Trained diffusion-based protein generative models for enzyme and binder design.</div></li>
+      <li style="font-size: 0.95rem; line-height: 1.45;"><strong style="font-weight: 600;">AI/ML Data Scientist</strong>, <span style="color: var(--accent);">Merck Research Laboratories</span> <span style="color: var(--muted); font-size: 12.3px; white-space: nowrap;">(AUG 2022 – JUN 2025)</span><div style="color: var(--muted); font-size: 0.9rem; margin-top: 2px;">Built production ML systems for antibody property prediction and small-molecule virtual screening.</div></li>
+      <li style="font-size: 0.95rem; line-height: 1.45;"><strong style="font-weight: 600;">Scientific Software Development Intern</strong>, <span style="color: var(--accent);">OpenEye Scientific Software</span> <span style="color: var(--muted); font-size: 12.3px; white-space: nowrap;">(MAY – AUG 2022)</span><div style="color: var(--muted); font-size: 0.9rem; margin-top: 2px;">Built software that mines PDB structures to guide structure-based ligand design.</div></li>
+    </ul>
   </section>
 
 </div>
