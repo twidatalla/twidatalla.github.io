@@ -6,9 +6,9 @@ A single-page personal/academic website, live at **https://twidatalla.github.io*
 
 | File | Purpose |
 |------|---------|
-| `index.html` | The entire website — markup, inline styles, SEO metadata (Open Graph/Twitter tags, Person JSON-LD), and a small vanilla `<script>` at the bottom (hover states, scroll-reveal, active-nav highlight). No framework, no bundler. |
+| `index.html` | The entire website — markup, inline styles, SEO metadata (Open Graph/Twitter tags, Person JSON-LD), and a small vanilla `<script>` at the bottom (link hover states). No framework, no bundler. |
 | `headshot.jpg` | Hero portrait (also used as the social-preview image). Referenced relatively as `headshot.jpg`. |
-| `cv_updated.pdf` | CV, linked from the nav "CV ↗" button and opened in a new tab. Referenced relatively as `cv_updated.pdf`. |
+| `cv_updated.pdf` | CV, linked as "CV" in the row of links under the intro and opened in a new tab. Referenced relatively as `cv_updated.pdf`. |
 | `robots.txt`, `sitemap.xml` | Search-engine crawl hints. |
 
 The whole site uses Arial (a system font), so nothing is loaded from Google Fonts or stored locally. The favicon is an inline SVG data-URI (no file).
@@ -48,7 +48,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 ## Notes / gotchas
 
 - **Asset filenames are referenced exactly** as `headshot.jpg` and `cv_updated.pdf`. If you rename either, update the matching reference in `index.html` (search for `headshot.jpg` and `cv_updated.pdf`).
-- The "CV ↗" link points at `cv_updated.pdf`. Swap that file to update the CV — no markup change needed if the name stays the same.
-- Contact email is `talal.widatalla@gmail.com` (appears twice: the 'Email' chip in the hero and the one-line Contact section below it).
+- The "CV" link points at `cv_updated.pdf`. Swap that file to update the CV — no markup change needed if the name stays the same.
+- Contact email is `talal.widatalla@gmail.com` (used by the 'Email' link in the row of links under the intro).
 - Accent color is blue `#1f5fae`, set once as `--accent` on the page wrapper `<div>`; other theme colors (`--ink`, `--muted`, `--paper`, `--surface`, `--hair`) are defined alongside it. To re-theme, change those CSS variables in the wrapper's inline `style`.
 - No analytics, cookies, external fonts, or external JS.
