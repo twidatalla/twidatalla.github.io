@@ -11,7 +11,7 @@ A single-page personal/academic website, live at **https://twidatalla.github.io*
 | `cv_updated.pdf` | CV, linked from the nav "CV ↗" button and opened in a new tab. Referenced relatively as `cv_updated.pdf`. |
 | `robots.txt`, `sitemap.xml` | Search-engine crawl hints. |
 
-Fonts (Archivo, Hanken Grotesk, IBM Plex Mono) load from Google Fonts via a `<link>` in `<head>` — no local font files needed. The favicon is an inline SVG data-URI (no file).
+The whole site uses Arial (a system font), so nothing is loaded from Google Fonts or stored locally. The favicon is an inline SVG data-URI (no file).
 
 **Keep the design as-is** unless the owner asks for content/style edits.
 
@@ -50,5 +50,5 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 - **Asset filenames are referenced exactly** as `headshot.jpg` and `cv_updated.pdf`. If you rename either, update the matching reference in `index.html` (search for `headshot.jpg` and `cv_updated.pdf`).
 - The "CV ↗" link points at `cv_updated.pdf`. Swap that file to update the CV — no markup change needed if the name stays the same.
 - Contact email is `talal.widatalla@gmail.com` (appears twice: the 'Email' chip in the hero and the one-line Contact section below it).
-- Accent color is `#a06a34`, set once as `--accent` on the page wrapper `<div>`; other theme colors (`--ink`, `--muted`, `--paper`, `--surface`, `--hair`) are defined alongside it. To re-theme, change those CSS variables in the wrapper's inline `style`.
-- No analytics, cookies, or external JS beyond Google Fonts.
+- Accent color is blue `#1f5fae`, set once as `--accent` on the page wrapper `<div>`; other theme colors (`--ink`, `--muted`, `--paper`, `--surface`, `--hair`) are defined alongside it. To re-theme, change those CSS variables in the wrapper's inline `style`.
+- No analytics, cookies, external fonts, or external JS.
